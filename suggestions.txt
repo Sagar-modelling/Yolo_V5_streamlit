@@ -1,0 +1,17 @@
+# To increase the video frame speed
+
+`
+To increase the frame speed in the video,
+you can add a delay of fewer milliseconds between each frame by changing the value passed to the waitKey() method.
+For example, you can try reducing the value from 1 millisecond to 10 or 20 milliseconds to increase the frame speed. 
+`
+
+`
+If reducing the delay in the waitKey() method didn't increase the video speed to your satisfaction, there are a few other things you can try to improve performance.
+
+Reduce the size of the image frames: If the image frames are large, processing them can take a lot of time. You can try resizing the frames to a smaller size before passing them to the object detection algorithm. This can be done using the cv2.resize() method.
+
+Use a faster GPU: If you have a compatible GPU, you can try using it to accelerate the object detection algorithm. YOLO is designed to take advantage of GPU acceleration, which can greatly improve performance. You can use the cv2.dnn.DNN_TARGET_OPENCL flag to enable GPU acceleration.
+
+Use a more optimized implementation of YOLO: There are many different implementations of YOLO available, and some are more optimized for speed than others. You can try using a different implementation, such as the Darknet implementation, which is known for its speed.
+`
